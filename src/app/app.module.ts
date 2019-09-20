@@ -13,19 +13,8 @@ import { ProductEditComponent } from '@layout/product-edit/product-edit.componen
 import { ProductsService } from '@services/product-service/products.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ProductAddComponent,
-    ProductGetComponent,
-    ProductEditComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    SlimLoadingBarModule,
-    ReactiveFormsModule,
-    HttpClientModule
-  ],
+  declarations: [AppComponent, ProductAddComponent, ProductGetComponent, ProductEditComponent],
+  imports: [BrowserModule, AppRoutingModule, SlimLoadingBarModule, ReactiveFormsModule, HttpClientModule],
   providers: [ProductsService],
   bootstrap: [AppComponent]
 })

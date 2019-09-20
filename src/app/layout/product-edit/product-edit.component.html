@@ -14,8 +14,7 @@
       <div
         *ngIf="
           angForm.controls['ProductName'].invalid &&
-          (angForm.controls['ProductName'].dirty ||
-            angForm.controls['ProductName'].touched)
+          (angForm.controls['ProductName'].dirty || angForm.controls['ProductName'].touched)
         "
         class="alert alert-danger"
       >
@@ -37,8 +36,7 @@
       <div
         *ngIf="
           angForm.controls['ProductDescription'].invalid &&
-          (angForm.controls['ProductDescription'].dirty ||
-            angForm.controls['ProductDescription'].touched)
+          (angForm.controls['ProductDescription'].dirty || angForm.controls['ProductDescription'].touched)
         "
         class="alert alert-danger"
       >
@@ -59,8 +57,7 @@
       <div
         *ngIf="
           angForm.controls['ProductPrice'].invalid &&
-          (angForm.controls['ProductPrice'].dirty ||
-            angForm.controls['ProductPrice'].touched)
+          (angForm.controls['ProductPrice'].dirty || angForm.controls['ProductPrice'].touched)
         "
         class="alert alert-danger"
       >
@@ -70,13 +67,7 @@
       </div>
       <div class="form-group">
         <button
-          (click)="
-            updateProduct(
-              ProductName.value,
-              ProductDescription.value,
-              ProductPrice.value
-            )
-          "
+          (click)="updateProduct(ProductName.value, ProductDescription.value, ProductPrice.value)"
           type="submit"
           class="btn btn-primary"
           [disabled]="angForm.invalid"
