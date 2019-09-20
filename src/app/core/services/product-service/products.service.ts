@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +18,7 @@ export class ProductsService {
     this.http.post(`${this.uri}/add`, obj).subscribe(res => {
       console.log('Done');
 
-      this.router.navigate(['/products']);
+      this.router.navigate(['/products/productList']);
     });
   }
 
