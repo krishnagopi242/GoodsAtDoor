@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { AppConstants } from 'app/shared/constants/app.constants';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
-  uri = 'http://localhost:4000/products';
+  uri = `http://${AppConstants.baseURL}/products`;
   constructor(private http: HttpClient, private router: Router) {}
   addProduct(ProductName, ProductDescription, ProductPrice) {
     const obj = {
