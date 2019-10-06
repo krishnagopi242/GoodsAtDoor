@@ -240,6 +240,10 @@ input.input100 {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
 }
 
 .login100-form-btn:hover {
